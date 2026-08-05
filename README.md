@@ -57,6 +57,6 @@ session
 * copy the files to a directory like /var/www/html/thegeminator or something else
 * secure it with .htaccess or any other really secure auth system
 * use it offline or only on your intranet
-* no need to edit directly on your gemini capsule, sync it after editing ans set up the right user/group for the gemini server :D
+* no need to edit directly on your gemini capsule, sync it after editing and set up the right user/group for the gemini server 😎
 
 This is THE GEMINATOR!
