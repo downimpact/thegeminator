@@ -52,7 +52,7 @@ json
 openssl
 session
 ```
-## Install
+## ⚙️ Install
 * create a webserver with php
 * copy the files to a directory like /var/www/html/thegeminator or something else
 * secure it with .htaccess or any other realy secure auth system
