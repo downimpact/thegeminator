@@ -1,0 +1,22 @@
+# Laufzeit- und Sicherungsdateien
+backups/*
+!backups/.gitkeep
+
+# Lokale Konfiguration
+config.local.php
+.env
+.env.*
+
+# Betriebssystem und Editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Protokolle und temporäre Dateien
+*.log
+*.tmp
+*.bak
+
+config.php

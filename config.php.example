@@ -1,0 +1,31 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+    'content_root' => '/srv/gemini',
+    'backup_root' => __DIR__ . '/backups',
+
+    'allowed_extensions' => [
+        'gmi',
+        'gemini',
+        'txt',
+    ],
+
+    'max_file_size' => 1024 * 1024,
+    'max_import_size' => 1024 * 1024,
+
+    'connect_timeout' => 5,
+    'download_timeout' => 15,
+    'max_redirects' => 5,
+
+    'allowed_schemes' => [
+        'gemini',
+        'https',
+        'http',
+    ],
+
+    'allowed_internal_hosts' => [],
+
+    'verify_gemini_peer' => true,
+];
