@@ -6,6 +6,7 @@
   | | |  _  | |___  | |_| | |___| |  | || || |\  |/ ___ \| || |_| |  _ <
   |_| |_| |_|_____|  \____|_____|_|  |_|___|_| \_/_/   \_\_| \___/|_| \_\
 ```
+![THE GEMINATOR](img/geminator.png)
 ## 🌐 Overview
 THE GEMINATOR manages Gemtext files below /srv/gemini, provides a live preview, and supports imports, printing, directories, backups and emoji.
 
