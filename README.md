@@ -61,5 +61,9 @@ session
 * use it offline or only on your intranet
 * no need to edit directly on your gemini capsule, sync your work after editing and set up the right user/group for the gemini server 😎
 
-
 This is THE GEMINATOR!
+
+## 📝 Notes
+This project was created as an experimental hobby project.
+
+It is provided without support or warranty.
