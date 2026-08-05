@@ -1,79 +1,55 @@
-# THE GEMINATOR
+# 🚀 Welcome to THE GEMINATOR
+```
+ _____ _   _ _____    ____ _____ __  __ ___ _   _    _  _____ ___  ____
+|_   _| | | | ____|  / ___| ____|  \/  |_ _| \ | |  / \|_   _/ _ \|  _ \
+  | | | |_| |  _|   | |  _|  _| | |\/| || ||  \| | / _ \ | || | | | |_) |
+  | | |  _  | |___  | |_| | |___| |  | || || |\  |/ ___ \| || |_| |  _ <
+  |_| |_| |_|_____|  \____|_____|_|  |_|___|_| \_/_/   \_\_| \___/|_| \_\
+```
+## 🌐 Overview
+THE GEMINATOR manages Gemtext files below /srv/gemini, provides a live preview, and supports imports, printing, directories, backups and emoji.
 
-Browserbasierter Gemtext-Editor in PHP für Inhalte unter `/srv/gemini`.
+### ⚙️ Current features:
+* classic directory tree
+* create, edit, save and delete Gemtext files
+* create and delete empty directories
+* live Gemtext preview, you can work online and -> offline, no need for a Gemini Server to edit and preview Gemtext files 😎
+* toolbar for headings, links, lists, quotes and preformatted blocks
+* remove formatting with an eraser button
+* import external files via gemini://, HTTPS or HTTP
+* print the rendered preview or the Gemtext source or directory tree
+* automatic backups before overwriting or deleting files
+* German and English interface
+* light, dark, system and “Terminal” themes
+* path traversal, CSRF and SSRF protection
 
-## Funktionen
+## 😀 Emoji picker
+The built-in picker contains 454 unique emoji and Unicode symbols. Favorites and recently used symbols are stored locally in the browser.
 
-- moderne responsive Oberfläche
-- Dateiübersicht
-- Verzeichnisse anlegen
-- Laden und Speichern von `.gmi`, `.gemini` und `.txt`
-- automatische Sicherung vor dem Überschreiben
-- Gemtext-Vorschau
-- Import von `gemini://`, `https://` und `http://`
-- Schutz vor Path Traversal und SSRF
-- System-, Hell- und Dunkelmodus
-- Druck von Vorschau oder Gemtext-Quelltext
-- Löschen von Dateien und leeren Verzeichnissen
+## 📄 Supported file types
+Editable and saveable
+* .gmi, 
+* .gemini, 
+* .txt
 
-## Installation
+## ➡️ External imports
+* text/gemini, 
+* text/plain, 
+* text/markdown
+HTML and binary files are not loaded into the text editor. Capsule downloads are opened through their links in a Gemini client.
 
-```bash
-sudo mkdir -p /var/www/html/gemini-editor
-sudo unzip gemini-editor.zip -d /var/www/html/gemini-editor
-sudo chown -R root:www-data /var/www/html/gemini-editor
-sudo find /var/www/html/gemini-editor -type d -exec chmod 750 {} \;
-sudo find /var/www/html/gemini-editor -type f -exec chmod 640 {} \;
+## ⌨️ Keyboard shortcuts
+Ctrl/Cmd + S — Save file
 
-sudo chown -R www-data:www-data /var/www/html/gemini-editor/backups
-sudo chmod 770 /var/www/html/gemini-editor/backups
+## Requirements
+* a Webserver like Apache 2.4 or Nginx with PHP-FPM
+* PHP 8.1 or newer with followig modules
+```
+curl
+filter
+json
+openssl
+session
 ```
 
-Damit Apache Inhalte in `/srv/gemini` bearbeiten darf:
-
-```bash
-sudo chgrp -R www-data /srv/gemini
-sudo find /srv/gemini -type d -exec chmod 2770 {} \;
-sudo find /srv/gemini -type f -exec chmod 660 {} \;
-```
-
-Benötigte PHP-Erweiterung für HTTP/HTTPS-Importe:
-
-```bash
-sudo apt install php-curl
-sudo systemctl reload apache2
-```
-
-## Konfiguration
-
-In `config.php`:
-
-```php
-'content_root' => '/srv/gemini',
-'allowed_internal_hosts' => [
-    'gemini.fritzbox',
-],
-'verify_gemini_peer' => false,
-```
-
-`verify_gemini_peer` ist für selbstsignierte Gemini-Zertifikate im Heimnetz standardmäßig deaktiviert.
-
-- automatische Erneuerung des CSRF-Tokens nach Ablauf der PHP-Session
-
-- integrierte Emoji-Auswahl mit Kategorien und zuletzt verwendeten Symbolen
-
-- durchsuchbare Emoji-Auswahl mit rund 300 Symbolen, Kategorien, Favoriten und zuletzt verwendeten Emojis
-
-- Emoji-Kategorie „Wissenschaft & Technik“ mit Labor-, Medizin-, Physik- und Mathematiksymbolen
-
-- eigenes SVG-Favicon passend zum blauen Editor-Design
-
-- Emoji-Katalog bereinigt: jedes Symbol erscheint nur noch in einer passenden Kategorie
-
-- Verzeichnisbaum als dritte Druckansicht für Dokumentationszwecke
-
-- integrierter Hilfe-Dialog mit Emoji-Anzahl, unterstützten Dateitypen und Tastenkürzeln
-
-- logisch neu sortierte Hauptwerkzeugleiste: Hilfe, neue Datei, neues Verzeichnis, Import, Drucken, Speichern, Sprache, Theme
-
-- lädt beim Start automatisch die zuletzt geöffnete Datei, ersatzweise `index.gmi`
+This is THE GEMINATOR!
