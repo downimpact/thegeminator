@@ -56,7 +56,8 @@ session
 * create a webserver with php
 * copy the files to a directory like /var/www/html/thegeminator or something else
 * copy config.example.php -> config.php and setup your things
-* secure it with .htaccess or any other really secure auth system
+* mkdir /srv/gemini
+* secure the php install path with .htaccess or any other really secure auth system
 * use it offline or only on your intranet
 * no need to edit directly on your gemini capsule, sync your work after editing and set up the right user/group for the gemini server 😎
 
