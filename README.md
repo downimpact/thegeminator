@@ -8,7 +8,7 @@
 ```
 ![THE GEMINATOR](img/geminator.png)
 ## 🌐 Overview
-THE GEMINATOR manages Gemtext files below /srv/gemini, provides a live preview, and supports imports, printing, directories, backups and emoji.
+THE GEMINATOR manages Gemtext files below /srv/gemini, provides a live preview, and supports imports, printing, directories, backups and emoji. And it is hardly vibe coded!
 
 ### ⚙️ Current features:
 * classic directory tree
