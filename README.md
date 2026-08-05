@@ -54,8 +54,9 @@ session
 ```
 ## Install
 * create a webserver with php
-*copy the files to a directory lige /var/www/html/thegeminator or something els
-* secure it with .htaccess or any auth system
+* copy the files to a directory like /var/www/html/thegeminator or something else
+* secure it with .htaccess or any other realy secure auth system
 * use it offline or only on your intranet
+* no need to edit directly on your gemini capsule, sync it after editing :D
 
 This is THE GEMINATOR!
