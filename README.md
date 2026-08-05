@@ -53,9 +53,9 @@ openssl
 session
 ```
 ## Install
-create a webserver with php
-copy the files to a directory lige /var/www/html/thegeminator or something els
-secure it with .htaccess or any auth system
-use it offline or only on your intranet
+* create a webserver with php
+*copy the files to a directory lige /var/www/html/thegeminator or something els
+* secure it with .htaccess or any auth system
+* use it offline or only on your intranet
 
 This is THE GEMINATOR!
