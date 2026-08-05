@@ -58,5 +58,6 @@ session
 * secure it with .htaccess or any other really secure auth system
 * use it offline or only on your intranet
 * no need to edit directly on your gemini capsule, sync it after editing and set up the right user/group for the gemini server 😎
+* copy config.example.php -> config.php and setup your things
 
 This is THE GEMINATOR!
